@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".QRScanner">
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="barcode"/>
+        </activity>
+        <activity android:name=".AccountActivity" />
         <activity android:name=".Homescreen" />
         <activity android:name=".SignUp" />
         <activity android:name=".MainActivity">
